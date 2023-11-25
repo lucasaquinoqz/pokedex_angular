@@ -31,8 +31,6 @@ export class PokeApiService {
     )
   }
 
-  
-
   public apiGetPokemons(url: string): Observable<any>{
     return this.http.get<any>(url).pipe(
       map(
